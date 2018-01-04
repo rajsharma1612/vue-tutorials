@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dmeo</title>
+</head>
+<body>
+<div id="app">
+	<input type="input" v-model="message">
+	<h1>{{message}}</h1>
+</div>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+<script type="text/javascript">
+
+var data = {
+	message: "Greetings!!!"
+}
+
+new Vue({
+	el: '#app',
+	data: data
+});
+
+</script>
+
+</body>
+</html>
