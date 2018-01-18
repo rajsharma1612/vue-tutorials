@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Vue.js Tutorials</title>
+</head>
+
+<body>
+	<template id="story-template">
+    <h1>{{plot}}</h1>
+  </template>
+
+	<div id="app">
+		<story plot="Hello world to html"></story>
+		<story plot="Hello world to javaScript"></story>
+		<story plot="Hello world to Vue.js"></story>
+	</div>
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+	<script type="text/javascript">
+		Vue.component('story', {
+			props: ['plot'],
+			template: "#story-template"
+		});
+		new Vue({
+			el: '#app',
+		});
+	</script>
+
+</body>
+
+</html>
